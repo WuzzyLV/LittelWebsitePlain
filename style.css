@@ -17,7 +17,17 @@
 }
 body {
     background-image: url(images/bg.png);
-    
+    height: 200000px;
+}
+h2 {
+    margin: 2.5rem 0 2rem 0;
+}
+
+h2 span {
+    padding: 0.25rem 0.5rem;
+    background-color: #555;
+    color: white;
+    border-radius: 10px;
 }
 
 .container {
@@ -57,6 +67,9 @@ body {
     border-style: inset;
     border-radius: 25px;
     margin: 0 1px;
+}
+.theme-btn:hover{
+    cursor: pointer;
 }
 #black-theme {
     background-color: #333333;
@@ -116,16 +129,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-#services h2 {
-    margin: 2.5rem 0 2rem 0;
-}
-
-#services h2 span {
-    padding: 0.25rem 0.5rem;
-    background-color: #555;
-    color: white;
-    border-radius: 10px;
-}
 
 /* SERVICE BOX */
 
@@ -157,3 +160,64 @@ body {
     margin: 1rem;
 }
 
+/* REVIEWS */
+#reviews .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#reviews h2{
+    margin: 3rem 0 4rem 0;
+    
+}
+
+#client-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.profile{
+    width: 375px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E2E2E2;
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.profile img {
+    position: absolute;
+    bottom: 13.5rem;
+    width: 7rem;
+}
+
+.profile h3 {
+    margin-top: 5rem;
+}
+
+.profile p {
+    text-align: center;
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
+}
+
+.profile .readmore {
+    color: white;
+    font-size: 1.05rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    background-color: #999;
+    padding: 0.4rem 4rem;
+    border-radius: 3px;
+    margin: 0.25rem 0 1.5rem 0;
+}
+.profile .readmore:hover {
+    cursor: pointer;
+    filter: invert(100%);
+}
