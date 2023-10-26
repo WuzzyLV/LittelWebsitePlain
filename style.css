@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 /* BOILERPLATE */
 * {
     font-family: 'Quicksand', sans-serif;
@@ -8,7 +8,7 @@
     outline: none;
     border: none;
     text-decoration: none;
-    /* transition: all .3s; */
+    transition: all .3s;
     color: var(--text-color);
 }
 
@@ -17,7 +17,6 @@
 }
 body {
     background-image: url(images/bg.png);
-    height: 200000px;
 }
 h2 {
     margin: 2.5rem 0 2rem 0;
@@ -138,6 +137,7 @@ h2 span {
     justify-content: space-between;
     gap: 2rem;
 }
+/* TODO make not center on y so paragraph size doesnt fuck it */
 #service-box > div {
     display: flex;
     align-items: center;
@@ -153,35 +153,35 @@ h2 span {
 }
 
 #service-box h3 {
-    margin-left: 1rem;
+    margin: 0 0 1rem 1rem;
 }
 
 #service-box p {
-    margin: 1rem;
+    margin: 1rem 0 1rem 1rem;
+    font-size: 0.95rem;
 }
 
 /* REVIEWS */
 #reviews .container{
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 #reviews h2{
+    text-align: center;
     margin: 3rem 0 4rem 0;
-    
 }
 
 #client-box{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 1200px;
+    margin-bottom: 3rem;
 }
 
 .profile{
     width: 375px;
-    height: 290px;
+    height: 310px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,7 +193,7 @@ h2 span {
 
 .profile img {
     position: absolute;
-    bottom: 13.5rem;
+    bottom: 14.75rem;
     width: 7rem;
 }
 
@@ -219,5 +219,107 @@ h2 span {
 }
 .profile .readmore:hover {
     cursor: pointer;
-    filter: invert(100%);
+    font-size: 1.1rem;
+}
+
+/* EMAIL SIGNUP */
+
+#signup {
+    background-image: url(images/bg2.png);
+    background-color: #555;
+}
+
+#signup .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#signup h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin: 2.5rem 0 0.5rem 0;
+}
+#signup p {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#signup form {
+    margin-bottom: 3.5rem;
+}
+
+#signup form input{
+    padding: 0.7rem 2.5rem 0.8rem 0.5rem;
+    border-radius: 0.5rem;
+    margin: 0 0.1rem;
+}
+
+#signup form input::placeholder{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+#signup form input[type="submit"] {
+    color: black;
+    font-weight: 600;
+    padding: 0.8rem 1rem;
+}
+
+#signup form input[type="submit"]:hover {
+    cursor: pointer;
+    filter: invert(0.1);
+
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #333;
+}
+
+footer .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* SOCIAL BUTTONS */
+
+.social-btn {
+    width: 2rem;
+    height: 2rem;
+    margin: 1.5rem 0.25rem;
+    transition: none;
+}
+
+.social-btn:hover {
+    cursor: pointer;
+    background-position: 0 -32px;
+}
+
+#linkedin-btn {
+    background-image: url(images/in.png);
+}
+
+#youtube-btn {
+    background-image: url(images/yt.png);
+}
+#facebook-btn {
+    background-image: url(images/fb.png);
+}
+#twitter-btn {
+    background-image: url(images/tw.png);
 }
