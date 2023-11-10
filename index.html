@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Local -->
+    <script src="theme-data.js"></script>
+    <script src="script.js" defer></script>
     <title>IT atbalsts</title>
 </head>
 <body>
@@ -15,10 +22,10 @@
                 <!-- TODO -->
                 <ul>
                     <li>
-                        <div class="theme-btn" id="black-theme"></div>
+                        <div class="theme-btn" id="default-theme"></div>
                     </li>
                     <li>
-                        <div class="theme-btn" id="purple-theme"></div>
+                        <div class="theme-btn" id="pink-theme"></div>
                     </li>
                     <li>
                         <div class="theme-btn" id="blue-theme"></div>
@@ -38,7 +45,11 @@
     </header>
     <section id="slideshow" class="flex-center">
         <div class="container">
-            <img src="images/slideshow1.jpg" alt="">
+            <img class="active" src="images/slideshow1.jpg" alt="">
+            <img src="images/slideshow2.jpg" alt="">
+            <img id="ravalda-meme" src="images/slideshow3.png" alt="">
+            <div id="prev-slide-btn" class="fa-solid fa-chevron-right"></div>
+            <div id="next-slide-btn"class="fa-solid fa-chevron-left"></div>
         </div>
     </section>
     <section id="about" class="flex-center">
@@ -155,5 +166,6 @@
             </ul>
         </div>
     </footer>
+    <div id="scroll-top-btn" class="fa-solid fa-chevron-up"></div>
 </body>
 </html>
